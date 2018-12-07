@@ -9,7 +9,7 @@
 <import addon="script.module.resolveurl" version="5.0.15"/>
 </requires>
 <extension point="xbmc.python.pluginsource"
-			library="kdrama.py">
+			library="tala.py">
 		<provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
