@@ -17,7 +17,7 @@
 <platform>all</platform>
 <language>en</language>
 <license>GNU PUBLIC LICENSE. version 2, june 1991</license><assets>
-			        <icon>icon.gif</icon>
+			        <icon>icon.png</icon>
 			        <fanart>fanart.jpg</fanart>      
 			    </assets>
 </extension>
