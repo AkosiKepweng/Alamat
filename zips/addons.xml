@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.video.cinco" name="TV5PH Live" provider-name="Kepweng" version="0.0.1">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="repository.jsergio" version="1.0.4" />
+        <import addon="repository.totalrevolution" version="1.0" />
+    </requires>
+    <extension library="cinco.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary></summary>
+        <description></description>
+        <platform></platform>
+        <forum></forum>
+        <website></website>
+        <assets>
+            <icon>icon.gif</icon>
+            <fanart></fanart>
+        </assets>
+    </extension>
+</addon>
+
 <addon 	id="plugin.video.sidapa"
 		name="SIDAPA"
 		version="0.0.1"
@@ -7,10 +29,10 @@
 <requires>
 <import addon="xbmc.python" version="2.1.0"/>
 <import addon="script.module.resolveurl" version="5.0.18"/>
- <import addon="script.module.urlresolver" version="4.0.16"/>
-    <import addon="script.module.requests" version="2.18.4.1"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.unidecode" version="0.4.16"/>
+<import addon="script.module.urlresolver" version="4.0.16"/>
+<import addon="script.module.requests" version="2.18.4.1"/>
+<import addon="script.module.beautifulsoup" version="3.2.1"/>
+<import addon="script.module.unidecode" version="0.4.16"/>
 <import addon="script.module.python.koding.aio" version="1.0" />
 </requires>
 <extension point="xbmc.python.pluginsource"
@@ -38,8 +60,7 @@
 <import addon="xbmc.python" version="2.1.0"/>
 <import addon="script.module.resolveurl" version="5.0.18"/>
 </requires>
-<extension point="xbmc.python.pluginsource"
-			library="tala.py">
+<extension point="xbmc.python.pluginsource" library="tala.py">
 		<provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
@@ -47,50 +68,77 @@
 <description lang="en"></description>
 <platform>all</platform>
 <language>en</language>
-<license>GNU PUBLIC LICENSE. version 2, june 1991</license><assets>
-			        <icon>icon.gif</icon>
-			        <fanart>fanart.jpg</fanart>
-			    </assets>
+<license>GNU PUBLIC LICENSE. version 2, june 1991</license>
+<assets>
+<icon>icon.gif</icon>
+<fanart>fanart.jpg</fanart>
+</assets>
 </extension>
 </addon>
 
 
-<addon id="repository.alamat" name="[COLOR yellow]Alamat[/COLOR] " version="0.0.1" provider-name="Bathala">
-
+<addon id="alamat" name="Alamat" version="0.0.2" provider-name="Team Kepweng">
 	<extension point="xbmc.addon.repository" name="Alamat">
-
-
 		<dir>
-		 <info compressed="false">http://github.com/cmik/cmik.xbmc/raw/master/addons.xml</info>
-		 <checksum>http://github.com/cmik/cmik.xbmc/raw/master/addons.xml.md5</checksum>
-        		<datadir zip="true">http://github.com/cmik/cmik.xbmc/raw/master/downloads</datadir>
+			<info compressed="false">http://github.com/cmik/cmik.xbmc/raw/master/addons.xml</info>
+			<checksum>http://github.com/cmik/cmik.xbmc/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">http://github.com/cmik/cmik.xbmc/raw/master/downloads</datadir>
 		</dir>
 		<dir>
-        		<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-        		<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-        		<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
 		</dir>
-		<info compressed="false">https://raw.githubusercontent.com/AkosiKepweng/Alamat/master/zips/addons.xml</info>
-
-		<checksum>https://raw.githubusercontent.com/AkosiKepweng/Alamat/master/zips/addons.xml.md5</checksum>
-
-		<datadir zip="true">https://raw.githubusercontent.com/AkosiKepweng/Alamat/master/zips/</datadir>
-
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/AkosiKepweng/Alamat/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/AkosiKepweng/Alamat/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/AkosiKepweng/Alamat/master/zips/</datadir>
+		</dir>
 	</extension>
-
 	<extension point="xbmc.addon.metadata">
+	<summary lang="en">Bathala Project</summary>
+	<description lang="en">A Private and Personal Project</description>
+	<genre></genre>
+	<assets>
+		<icon>icon.gif</icon>
+		<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
 
-		<summary lang="en">Bathala Project</summary>
+<addon id="repository.jsergio" name="jsergio repo" version="1.0.4" provider-name="jsergio">
+	<extension point="xbmc.addon.repository" name="jsergio repo">
+        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Repo for jsergio Add-ons</summary>
+		<description>Repo for jsergio Add-ons</description>
+		<platform>all</platform>
+	</extension>
+</addon>
 
-		<description lang="en">A Private and Personal Project</description>
-
-		<genre></genre>
-
-
-			 <assets>
-			        <icon>icon.gif</icon>
-			        <fanart>fanart.jpg</fanart>
-			    </assets>
+<addon id="repository.totalrevolution" version="1.0" name=" [COLOR=dodgerblue]T[/COLOR]otal[COLOR=dodgerblue]R[/COLOR]evolution Repo" provider-name="TotalRevolution">
+	<extension point="xbmc.addon.repository" name="TotalRevolution repo">
+		<info compressed="false">https://github.com/totalrevolution/totalrevolution/raw/master/zips/addons.xml</info>
+		<checksum>https://github.com/totalrevolution/totalrevolution/raw/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/totalrevolution/totalrevolution/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>[COLOR=dodgerblue]T[/COLOR]otal[COLOR=dodgerblue]R[/COLOR]evolution Repo</summary>
+		<description>All the latest development updates from the TotalRevolution team</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 
