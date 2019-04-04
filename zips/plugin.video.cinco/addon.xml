@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.cinco" name="Santonilyo" provider-name="Kepweng" version="0.0.3">
+<addon id="plugin.video.cinco" name="TV5PH Live" provider-name="Kepweng" version="0.0.4">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="repository.jsergio" version="1.0.4" />
