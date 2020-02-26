@@ -3,9 +3,9 @@
 <addon 	id="plugin.video.bathala" name="BATHALA" version="BATHALA-0.0.6" provider-name="Team Bathala">
 <requires>
 <import addon="xbmc.python" version="2.1.0"/>
-<import addon="script.module.resolveurl" version="5.0.38"/>
 <import addon="script.module.requests" version="2.18.4.1"/>
 <import addon="script.module.python.koding.aio" version="1.0" />
+<import addon="script.module.resolveurl" version="5.0.38" />
 
 </requires>
 <extension point="xbmc.python.pluginsource"
