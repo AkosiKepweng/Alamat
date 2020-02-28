@@ -75,13 +75,14 @@
 
 <addon 	id="plugin.video.tala"
 		name="TALA"
-		version="0.0.1"
+		version="0.0.2"
 		provider-name="Bathala">
 <requires>
 <import addon="xbmc.python" version="2.1.0"/>
-<import addon="script.module.resolveurl" version="5.0.18"/>
+<import addon="script.module.resolveurl" version="5.0.38"/>
 </requires>
-<extension point="xbmc.python.pluginsource" library="tala.py">
+<extension point="xbmc.python.pluginsource"
+			library="tala.py">
 		<provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
@@ -89,11 +90,10 @@
 <description lang="en"></description>
 <platform>all</platform>
 <language>en</language>
-<license>GNU PUBLIC LICENSE. version 2, june 1991</license>
-<assets>
-<icon>icon.gif</icon>
-<fanart>fanart.jpg</fanart>
-</assets>
+<license>GNU PUBLIC LICENSE. version 2, june 1991</license><assets>
+			        <icon>icon.gif</icon>
+			        <fanart>fanart.jpg</fanart>
+			    </assets>
 </extension>
 </addon>
 
