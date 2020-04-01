@@ -99,24 +99,26 @@
 </extension>
 </addon>
 
-<addon 	id="plugin.video.Tele-Kepweng" name="Kapihan ni Tarsilo" version="Beta-0.2" provider-name="Kepweng">
+<addon 	id="plugin.video.Tele-Kepweng" name="Coffeshop ni Tars" version="Beta-0.04" provider-name="Kepweng">
 <requires>
 <import addon="xbmc.python" version="2.1.0"/>
-<import addon="script.module.resolveurl" version="5.0.15"/>
+<import addon="script.module.resolveurl" version="5.0.39"/>
+<import addon="script.module.jsbeautifier" version="1.8.8"/>
 <import addon="script.module.requests" version="2.18.4.1"/>
 <import addon="script.module.python.koding.aio" version="1.0" />
 
+
 </requires>
-<extension point="xbmc.python.pluginsource"
-			library="Kepweng.py">
+<extension point="xbmc.service" library="service.py" start="startup"/>
+<extension point="xbmc.python.pluginsource" library="coffeshop.py">
 		<provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
-	<summary lang="en"></summary>
-	<description lang="en"></description>
-	<platform>all</platform>
-	<language>en</language>
-
+<summary lang="en"></summary>
+<description lang="en"></description>
+<platform>all</platform>
+<language>en</language>
+<license></license>
 </extension>
 </addon>
 
@@ -334,7 +336,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.38.1" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.39" provider-name="jsergio">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -385,26 +387,6 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
 		<license>GNU General Public License v.2</license>
 		<website>https://pypi.python.org/pypi/Unidecode</website>
 		<source>https://pypi.python.org/pypi/Unidecode</source>
-	</extension>
-</addon>
-
-<addon id="script.module.urlresolver" name="URLResolver" version="4.0.16" provider-name="Eldorado, tknorris, tvaddons">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" optional="true" />
-		<import addon="script.module.python.twitch" optional="true" />
-		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-        <forum>https://www.tvaddons.co/forums</forum>
-        <website>https://www.tvaddons.co</website>
 	</extension>
 </addon>
 </addons>
