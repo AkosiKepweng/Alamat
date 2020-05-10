@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon 	id="plugin.video.bathala" name="BATHALA" version="BATHALA-0.0.7" provider-name="Team Bathala">
+<addon 	id="plugin.video.bathala" name="BATHALA" version="BATHALA-0.0.8" provider-name="Team Bathala">
 <requires>
 <import addon="xbmc.python" version="2.1.0"/>
 <import addon="script.module.requests" version="2.22.0"/>
@@ -8,7 +8,7 @@
 <import addon="script.module.resolveurl" version="5.0.45"/>
 </requires>
 <extension point="xbmc.python.pluginsource"
-			library="bathala">
+			library="bathala.py">
 		<provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
