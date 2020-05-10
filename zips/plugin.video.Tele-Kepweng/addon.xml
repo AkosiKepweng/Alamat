@@ -1,16 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon 	id="plugin.video.Tele-Kepweng" name="Coffeshop ni Tars" version="Beta-0.04" provider-name="Kepweng">
+<addon 	id="plugin.video.Tele-Kepweng" name="Coffeshop ni Tars" version="Beta-0.06" provider-name="Kepweng">
 <requires>
 <import addon="xbmc.python" version="2.1.0"/>
-<import addon="script.module.resolveurl" version="5.0.39"/>
+<import addon="repository.kepweng2.0" version="0.0.7"/>
+<import addon="script.module.resolveurl" version="5.0.45"/>
+<import addon="script.module.requests" version="2.22.0" />
+<import addon="script.module.beautifulsoup" version="3.2.1" />
+<import addon="script.module.unidecode" version="1.1.1" />
 <import addon="script.module.jsbeautifier" version="1.8.8"/>
-<import addon="script.module.requests" version="2.18.4.1"/>
-<import addon="script.module.python.koding.aio" version="1.0" />
-
+<import addon="script.module.alamat_news" version="0.0.1"/>
+<import addon="script.module.python.koding.aio" version="7.20.77"/>
+<import addon="plugin.video.bathala" version="BATHALA-0.0.7" />
 
 </requires>
-<extension point="xbmc.service" library="service.py" start="startup"/>
-<extension point="xbmc.python.pluginsource" library="coffeshop.py">
+<extension point="xbmc.python.pluginsource" library="teamkepweng.py">
 		<provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
@@ -18,6 +21,5 @@
 <description lang="en"></description>
 <platform>all</platform>
 <language>en</language>
-<license></license>
 </extension>
 </addon>
