@@ -203,6 +203,19 @@
     </extension>
 </addon>
 
+	<addon id="script.module.kepwengnews" name="Kepweng News" provider-name="Team Kepweng" version="0.0.1">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0"/>
+			<import addon="script.module.requests" version="2.18.4.1"/>
+		</requires>
+		<extension point="xbmc.service" library="service.py" start="startup"/>
+		<extension point="xbmc.addon.metadata">
+			<description lang="en"></description>
+			<license></license>
+			<language>en</language>
+		</extension>
+	</addon>
+
 <addon id="script.module.python.koding.aio" name="Python Koding AIO" version="7.20.77" provider-name="Total Revolution">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
