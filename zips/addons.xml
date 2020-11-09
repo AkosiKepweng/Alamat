@@ -47,7 +47,7 @@
 </extension>
 </addon>
 
-<addon 	id="plugin.video.Tele-Kepweng" name="Coffeshop ni Tars" version="Beta-0.06" provider-name="Kepweng">
+<addon 	id="plugin.video.Tele-Kepweng" name="KAPIHAN" version="Beta-0.09" provider-name="Team Kepweng">
 <requires>
 <import addon="xbmc.python" version="2.1.0"/>
 <import addon="repository.kepweng2.0" version="0.0.7"/>
@@ -59,7 +59,6 @@
 <import addon="script.module.alamat_news" version="0.0.1"/>
 <import addon="script.module.python.koding.aio" version="7.20.77"/>
 <import addon="plugin.video.bathala" version="BATHALA-0.0.7" />
-
 </requires>
 <extension point="xbmc.python.pluginsource" library="teamkepweng.py">
 		<provides>video</provides>
