@@ -40,9 +40,6 @@
 <platform>all</platform>
 <language>en</language>
 <license>GNU PUBLIC LICENSE. version 2, june 1991</license>
-<assets>
-<fanart>fanart.jpg</fanart>
-</assets>
 </extension>
 </addon>
 
